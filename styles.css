@@ -1,69 +1,79 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
+/* General Styles */
 body {
-    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-image: url('images/sunset.jpg'); /* Replace with your new background */
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation Bar - Taller & Spaced */
 nav {
-    background: #2c3e50;
-    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0; /* Increased padding for more height */
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav ul li {
-    margin: 0 20px;
+    flex: 1;
+    text-align: center;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: color 0.3s;
+    display: block;
+    padding: 20px 0; /* More padding for a larger clickable area */
+    transition: background 0.3s ease-in-out;
 }
 
+/* Hover Effect */
 nav ul li a:hover {
-    color: #1abc9c;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Hero Section */
-.hero {
-    background: url('images/background.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+/* Header Section */
+header {
+    padding: 120px 20px; /* More space */
 }
 
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
+h1 {
+    font-size: 52px; /* Slightly larger title */
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px; /* More spacing below */
 }
 
-/* Call-to-Action Button */
-.cta {
-    padding: 12px 24px;
-    font-size: 20px;
-    background: #1abc9c;
-    color: white;
+p {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8; /* Increased spacing between lines */
+    margin-bottom: 40px; /* More spacing below */
+}
+
+/* Rounded 'Learn More' Button */
+button {
+    background-color: #2ecc71;
     border: none;
+    padding: 18px 35px; /* Larger button */
+    font-size: 20px;
     cursor: pointer;
-    transition: 0.3s;
+    color: white;
+    border-radius: 30px; /* Curved edges */
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s;
 }
 
-.cta:hover {
-    background: #16a085;
+button:hover {
+    background-color: #27ae60;
 }
