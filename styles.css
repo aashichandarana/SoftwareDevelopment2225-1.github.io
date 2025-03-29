@@ -114,3 +114,16 @@ button:hover {
     font-size: 32px;
     font-weight: bold;
 }
+
+/* Keep Crop Rotation image the same size */
+.crop-rotation img {
+    max-width: 600px; /* Keep original size */
+}
+
+/* Make other images smaller */
+.agroforestry img,
+.water-conservation img,
+.organic-farming img,
+.vertical-farming img {
+    max-width: 450px; /* Adjust image size */
+}
