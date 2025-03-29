@@ -64,6 +64,15 @@ h1 {
     margin-bottom: 30px;
 }
 
+.crop-rotation-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.crop-rotation-header h1 {
+    margin-bottom: 10px;
+}
+
 p {
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
