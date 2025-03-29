@@ -105,3 +105,11 @@ button:hover {
     display: block;
     margin: 20px auto;
 }
+
+/* Crop Rotation Page - Reduce Title Spacing */
+.crop-title {
+    margin-top: 10px;  /* Reduced space above */
+    margin-bottom: 10px; /* Reduced space below */
+    font-size: 32px; 
+    font-weight: bold;
+}
