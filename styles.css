@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Playfair Display', serif;
-    background-image: url('images/sunset.jpg');
+    background-image: url('images/sunset.jpg'); /* Updated background */
     background-size: cover;
     background-position: center;
     color: white;
@@ -26,7 +26,6 @@ nav ul {
 nav ul li {
     flex: 1;
     text-align: center;
-    position: relative;
 }
 
 nav ul li a {
@@ -34,39 +33,59 @@ nav ul li a {
     color: white;
     font-size: 18px;
     display: block;
-    padding: 20px 40px; /* Increased padding for better spacing */
+    padding: 20px 0;
     transition: background 0.3s ease-in-out;
 }
 
-/* Smaller Hover Effect */
-nav ul li a::before {
-    content: "";
-    position: absolute;
-    left: 10%; /* Adds space on left */
-    right: 10%; /* Adds space on right */
-    top: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-    z-index: -1;
+/* Add left and right spacing */
+nav ul li:first-child a {
+    padding-left: 20px;
 }
 
-nav ul li a:hover::before {
-    opacity: 1;
+nav ul li:last-child a {
+    padding-right: 20px;
+}
+
+/* Hover Effect - Reduced Width */
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 18px; /* Slightly reduced width on hover */
 }
 
 /* Header Section */
 header {
-    padding: 60px 20px; /* Reduced padding to decrease space */
+    padding: 100px 20px;
 }
 
 h1 {
     font-size: 52px;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 10px; /* Reduced margin to decrease space below */
-    margin-top: 10px; /* Reduced margin to decrease space above */
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Rounded 'Learn More' Button */
+button {
+    background-color: #2ecc71;
+    border: none;
+    padding: 18px 35px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60;
 }
 
 /* Content Section */
@@ -85,4 +104,12 @@ h1 {
     height: auto;
     display: block;
     margin: 20px auto;
+}
+
+/* Crop Rotation Page - Reduce Title Spacing */
+.crop-title {
+    margin-top: 10px;  /* Reduced space above */
+    margin-bottom: 10px; /* Reduced space below */
+    font-size: 32px; 
+    font-weight: bold;
 }
