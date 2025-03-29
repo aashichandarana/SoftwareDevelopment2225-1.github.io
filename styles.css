@@ -49,7 +49,7 @@ nav ul li:last-child a {
 /* Hover Effect - Reduced Width */
 nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 20px 18px; /* Slightly reduced width on hover */
+    padding: 20px 10px; /* Slightly reduced width on hover */
 }
 
 /* Header Section */
