@@ -25,3 +25,8 @@ button.addEventListener("mouseover", () => {
 button.addEventListener("mouseleave", () => {
     button.style.boxShadow = "none";
 });
+
+// "Learn More" Button Click Alert
+function learnMore() {
+    alert("Learn more about sustainable agriculture and its impact!");
+}
