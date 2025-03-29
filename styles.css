@@ -37,15 +37,6 @@ nav ul li a {
     transition: background 0.3s ease-in-out;
 }
 
-/* Add left and right spacing */
-nav ul li:first-child a {
-    padding-left: 20px;
-}
-
-nav ul li:last-child a {
-    padding-right: 20px;
-}
-
 /* Hover Effect */
 nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
