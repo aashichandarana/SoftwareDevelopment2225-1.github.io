@@ -33,35 +33,38 @@ nav ul li a {
     color: white;
     font-size: 18px;
     display: block;
-    padding: 20px 0;
+    padding: 20px 0; /* Original padding */
     transition: background 0.3s ease-in-out;
 }
 
 /* Hover Effect */
 nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 20px 20px;
+    padding: 20px 20px; /* Kept the hover padding */
 }
 
 /* Header Section */
 header {
-    padding: 100px 20px;
+    padding: 100px 20px; /* General header padding */
 }
 
 h1 {
     font-size: 52px;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* General h1 margin */
 }
 
+/* Crop Rotation Page - Reduce Title Spacing */
 .crop-rotation-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px; /* Adjust top padding for crop rotation header */
+    padding-bottom: 30px; /* Adjust bottom padding for crop rotation header */
 }
 
 .crop-rotation-header h1 {
-    margin-bottom: 10px;
+    margin-top: 0; /* Remove default top margin for h1 in crop rotation header */
+    margin-bottom: 10px; /* Adjust bottom margin for h1 in crop rotation header */
+    font-size: 42px; /* Optional: Adjust font size if needed */
 }
 
 p {
@@ -108,8 +111,8 @@ button:hover {
 
 /* Crop Rotation Page - Reduce Title Spacing */
 .crop-title {
-    margin-top: 10px;  /* Reduced space above */
+    margin-top: 10px; /* Reduced space above */
     margin-bottom: 10px; /* Reduced space below */
-    font-size: 32px; 
+    font-size: 32px;
     font-weight: bold;
 }
