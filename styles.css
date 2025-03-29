@@ -57,12 +57,13 @@ h1 {
 
 /* Crop Rotation Page - Reduce Title Spacing */
 .crop-rotation-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px; /* Adjust top padding for crop rotation header */
+    padding-bottom: 20px; /* Adjust bottom padding for crop rotation header */
 }
 
 .crop-rotation-header h1 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adjust bottom margin for h1 in crop rotation header */
+    font-size: 42px; /* Optional: Adjust font size if needed */
 }
 
 p {
@@ -107,13 +108,13 @@ button:hover {
     margin: 20px auto;
 }
 
-/* Crop Rotation Page - Reduce Title Spacing */
-.crop-title {
+/* Crop Rotation Page - Reduce Title Spacing (REMOVED DUPLICATE) */
+/* .crop-title {
     margin-top: 10px; /* Reduced space above */
-    margin-bottom: 10px; /* Reduced space below */
-    font-size: 32px;
-    font-weight: bold;
-}
+    /* margin-bottom: 10px; /* Reduced space below */
+    /* font-size: 32px;
+    /* font-weight: bold;
+} */
 
 /* Keep Crop Rotation image the same size */
 .crop-rotation img {
