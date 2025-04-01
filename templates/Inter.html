@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Crop Selection Results!</title>
+</head>
+<body>
+   <h1>Crop Selection Results! - Choose Your Crop for Following Years!</h1>
+   <form action="http://127.0.0.1:5000/show_summary" method="POST">
+       {% for family in rotation_crop_families %}
+       {% set counter = loop.index %}
+       <table>
+           <tr>
+               <td width="300">
+                   <span>Crop Family {{ family }} Year #{{ counter }}</span>
+               </td>
+               <td>
+                   <!-- <select id="cropDropdown_{{ family }}"> -->
+                   <select id="cropDropdown_{{ counter }}" name="cropDropdown_{{ counter }}">
+                       <option value="">Select a crop for {{ family }}</option>
+                       <script>
+                           fetch('/crops/{{ family }}')
+                               .then(response => response.json())
+                               .then(data => {
+                                   const dropdown = document.getElementById("cropDropdown_{{ counter }}");
+                                   data.forEach(crop => {
+                                       const option = document.createElement("option");
+                                       option.value = crop;
+                                       option.textContent = crop;
+                                       dropdown.appendChild(option);
+                                   });
+                               });
+                       </script>
+                   </select>
+               </td>
+           </tr>
+           <tr>
+               <td colspan="2">
+                   &nbsp;
+               </td>
+           </tr>
+       </table>
+       {% endfor %}
+       <table>
+           <tr>
+               <td width="100%" align="center">
+                   <button type="submit">Submit</button>
+               </td>
+           </tr>
+       </table>
+   </form>
+</body>
+</html>
