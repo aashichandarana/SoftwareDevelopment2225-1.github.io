@@ -5,7 +5,8 @@
 </head>
 <body>
    <h1>Crop Selection Results! - Choose Your Crop for Following Years!</h1>
-   <form action="http://127.0.0.1:5000/show_summary" method="POST">
+   <form action="https://banana-custard-30713-cb3f65229661.herokuapp.com/show_summary" method="POST">
+
        {% for family in rotation_crop_families %}
        {% set counter = loop.index %}
        <table>
